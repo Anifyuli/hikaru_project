@@ -1,0 +1,36 @@
+{
+    "folders": [
+        {
+            "name": "ReactJS",
+            "path": "apps/web"
+        },
+        {
+            "name": "NestJS",
+            "path": "apps/api"
+        },
+        {
+            "name": "Packages",
+            "path": "packages/"
+        },
+        {
+            "name": "Rootdir",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "editor.formatOnSave": true,
+        "files.exclude": {
+            "**/node_modules": true,
+            "**/dist": true,
+            "apps": true,
+            "packages": true
+        },
+        "terminal.integrated.cwd": "${workspaceFolder}",
+        "jest.disabledWorkspaceFolders": [
+            "ReactJS",
+            "Packages",
+            "Rootdir"
+        ]
+    }
+}

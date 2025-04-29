@@ -1,0 +1,22 @@
+{
+  "name": "hikaru_project",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Hikaru Project",
+  "scripts": {
+    "install": "pnpm install",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api start:dev",
+    "build:web": "pnpm --filter web build",
+    "build:api": "pnpm --filter api build",
+    "build": "pnpm build:web && pnpm build:api",
+    "preview:web": "pnpm --filter web preview",
+    "start:api": "pnpm --filter api start:prod",
+    "serve:api": "pnpm build:api && pnpm start:api",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format"
+  },
+  "keywords": [],
+  "author": "Anifyuli",
+  "license": "MIT"
+}
