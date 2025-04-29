@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Hikaru: Fullstack Dev",
+      "configurations": [
+        "Web (Vite)",
+        "API (NestJS)"
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Web (Vite)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "--filter",
+        "web",
+        "dev"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "API (NestJS)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "--filter",
+        "api",
+        "start:dev"
+      ],
+      "envFile": "${workspaceFolder}/.env",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
