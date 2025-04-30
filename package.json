@@ -4,18 +4,19 @@
   "version": "0.0.1",
   "description": "Hikaru Project",
   "scripts": {
-    "install": "pnpm install",
-    "dev:web": "pnpm --filter web dev",
-    "dev:api": "pnpm --filter api start:dev",
-    "build:web": "pnpm --filter web build",
-    "build:api": "pnpm --filter api build",
-    "build": "pnpm build:web && pnpm build:api",
-    "preview:web": "pnpm --filter web preview",
-    "start:api": "pnpm --filter api start:prod",
-    "serve:api": "pnpm build:api && pnpm start:api",
-    "lint": "pnpm -r lint",
-    "format": "pnpm -r format"
+    "dev:web": "yarn workspace web dev",
+    "dev:api": "yarn workspace api run start:dev",
+    "build:web": "yarn workspace web build",
+    "build:api": "yarn workspace api build",
+    "preview:web": "yarn workspace web preview",
+    "start:api": "yarn workspace api run start:prod",
+    "serve:api": "yarn workspace api run build && yarn workspace api run start:prod",
+    "lint": "yarn workspaces foreach -p -v run lint",
+    "format": "yarn workspaces foreach -p -v run format"
   },
+  "workspaces": [
+    "apps/*"
+  ],
   "keywords": [],
   "author": "Anifyuli",
   "license": "MIT"
