@@ -15,7 +15,7 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "pnpm",
+      "runtimeExecutable": "yarn",
       "runtimeArgs": [
         "--filter",
         "web",
@@ -29,7 +29,7 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "pnpm",
+      "runtimeExecutable": "yarn",
       "runtimeArgs": [
         "--filter",
         "api",
