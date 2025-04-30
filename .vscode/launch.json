@@ -17,7 +17,7 @@
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "yarn",
       "runtimeArgs": [
-        "--filter",
+        "workspace",
         "web",
         "dev"
       ],
@@ -31,7 +31,7 @@
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "yarn",
       "runtimeArgs": [
-        "--filter",
+        "workspace",
         "api",
         "start:dev"
       ],
