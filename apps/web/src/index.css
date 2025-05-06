@@ -1,68 +1,66 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "hikaru-exam";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Base colors */
+  --color-base-100: oklch(97% 0 0); /* Background */
+  --color-base-200: oklch(93% 0 0);
+  --color-base-300: oklch(86% 0 0);
+  --color-base-content: oklch(22% 0.031 278.072); /* Text Primary */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Primary colors */
+  --color-primary: oklch(51% 0.158 263); /* Biru (#3366cc) */
+  --color-primary-focus: oklch(46% 0.158 263);
+  --color-primary-content: oklch(100% 0 0);
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* Secondary colors */
+  --color-secondary: oklch(67% 0.16 230); /* Biru muda (#45aaf2) */
+  --color-secondary-focus: oklch(62% 0.16 230);
+  --color-secondary-content: oklch(100% 0 0);
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  /* Accent colors */
+  --color-accent: oklch(65% 0.25 290); /* Ungu (#a55eea) */
+  --color-accent-focus: oklch(60% 0.25 290);
+  --color-accent-content: oklch(100% 0 0);
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  /* Neutral colors */
+  --color-neutral: oklch(45% 0.05 260); /* Abu-abu (#5c6879) - Text Secondary */
+  --color-neutral-focus: oklch(40% 0.05 260);
+  --color-neutral-content: oklch(100% 0 0);
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+  /* Info colors - Soft Accent */
+  --color-info: oklch(
+    70% 0.22 290
+  ); /* Soft Accent - Lavender menengah (#bc8df0) */
+  --color-info-focus: oklch(65% 0.22 290);
+  --color-info-content: oklch(100% 0 0);
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  /* Success colors */
+  --color-success: oklch(62% 0.194 149.214); /* Hijau (#26de81) */
+  --color-success-focus: oklch(57% 0.194 149.214);
+  --color-success-content: oklch(100% 0 0);
+
+  /* Warning colors */
+  --color-warning: oklch(85% 0.2 90); /* Kuning */
+  --color-warning-focus: oklch(80% 0.2 90);
+  --color-warning-content: oklch(0% 0 0);
+
+  /* Error colors */
+  --color-error: oklch(70% 0.191 22.216); /* Merah muda (#fc5c65) */
+  --color-error-focus: oklch(65% 0.191 22.216);
+  --color-error-content: oklch(100% 0 0);
+
+  /* Styling options */
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
