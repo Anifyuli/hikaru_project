@@ -25,7 +25,7 @@ export default function LoginPage() {
   return (
     <div className="relative flex h-screen w-full flex-row">
       <div className="bg-primary flex h-full w-1/2 flex-col items-center justify-center gap-2">
-        <div className="p-8 text-center text-white">
+        <div className="p-8 text-center text-primary-content">
           <h1 className="text-primary-content mb-4 text-4xl font-bold">Welcome!</h1>
           <p className="max-w-md text-xl">Log in to your account to access your exam :)</p>
         </div>
@@ -33,10 +33,10 @@ export default function LoginPage() {
 
       <div className="bg-base-300 flex h-full w-1/2 flex-col items-center justify-center gap-1">
         <div className="w-4/5 max-w-md rounded-lg bg-white p-8 shadow-lg">
-          <h2 className="mb-6 text-center text-2xl font-bold text-gray-800">Login</h2>
+          <h2 className="mb-6 text-center text-2xl font-bold text-primary">Login</h2>
 
           {showError && (
-            <div className="mb-4 rounded border border-red-400 bg-red-100 p-3 text-red-700">{errorMessage}</div>
+            <div className="mb-4 rounded border border-warning bg-red-100 p-3 text-warning">{errorMessage}</div>
           )}
 
           <div className="space-y-4">
@@ -53,7 +53,7 @@ export default function LoginPage() {
                   onChange={(e) => setUsername(e.target.value)}
                 />
               </label>
-              <p className="validator-hint mt-1 text-xs text-gray-500">
+              <p className="validator-hint mt-1 text-xs text-primary-content">
                 Must be 3 to 30 characters containing only letters, numbers or dash
               </p>
             </div>
@@ -78,10 +78,10 @@ export default function LoginPage() {
 
             <div className="flex items-center justify-between">
               <label className="flex items-center">
-                <input type="checkbox" className="h-4 w-4 text-blue-500" />
+                <input type="checkbox" className="h-4 w-4 text-primary" />
                 <span className="ml-2 text-sm text-gray-700">Remember me</span>
               </label>
-              <a className="inline-block align-baseline text-sm font-bold text-blue-500 hover:text-blue-700" href="#">
+              <a className="inline-block align-baseline text-sm font-bold text-primary hover:text-blue-700" href="#">
                 Forgot Password?
               </a>
             </div>
