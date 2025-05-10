@@ -15,11 +15,13 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "yarn",
+      "runtimeExecutable": "npm",
       "runtimeArgs": [
-        "workspace",
-        "web",
-        "dev"
+        // "workspace",
+        // "web",
+        // "dev"
+        "run",
+        "dev:web"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
@@ -29,11 +31,13 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "yarn",
+      "runtimeExecutable": "npm",
       "runtimeArgs": [
-        "workspace",
-        "api",
-        "start:dev"
+        // "workspace",
+        // "api",
+        // "start:dev"
+        "run",
+        "dev:api"
       ],
       "envFile": "${workspaceFolder}/.env",
       "skipFiles": [

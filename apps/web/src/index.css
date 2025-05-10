@@ -1,4 +1,45 @@
 @import "tailwindcss";
+@layer base {
+  h1 {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-6);
+  }
+  h2 {
+    font-size: var(--text-3xl);
+    font-weight: var(--font-semibold);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-5);
+  }
+  h3 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-gray-800);
+    margin-bottom: var(--spacing-4);
+  }
+  h4 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-medium);
+    color: var(--color-gray-800);
+    margin-bottom: var(--spacing-4);
+  }
+  h5 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-medium);
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-3);
+  }
+  h6 {
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-3);
+  }
+}
+
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "hikaru-exam";
