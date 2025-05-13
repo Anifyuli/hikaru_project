@@ -18,7 +18,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "run",
-        "dev:api"
+        "dev:web"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
@@ -31,7 +31,7 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": [
         "run",
-        "dev:web"
+        "dev:api"
       ],
       "envFile": "${workspaceFolder}/.env",
       "skipFiles": [
