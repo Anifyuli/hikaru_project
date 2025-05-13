@@ -15,13 +15,11 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "yarn",
       "runtimeArgs": [
-        // "workspace",
-        // "web",
-        // "dev"
-        "run",
-        "dev:web"
+        "workspace",
+        "web",
+        "dev"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"
@@ -31,13 +29,11 @@
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "yarn",
       "runtimeArgs": [
-        // "workspace",
-        // "api",
-        // "start:dev"
-        "run",
-        "dev:api"
+        "workspace",
+        "api",
+        "start:dev"
       ],
       "envFile": "${workspaceFolder}/.env",
       "skipFiles": [
@@ -46,7 +42,8 @@
       "autoAttachChildProcesses": true,
       "sourceMaps": true,
       "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "internalConsoleOptions": "neverOpen",
+      "experimentalNetworking": "off"
     }
   ]
 }
